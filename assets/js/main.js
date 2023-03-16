@@ -6,15 +6,14 @@ function isPalindrome(word) {
 
     //trasformo la parola in un array di lettere
     const wordArray = word.split('');
-    console.log(wordArray);
+
     // passo al contrario gli elementi dell'array
     const reverseArray = wordArray.reverse();
-    console.log(reverseArray);
 
+    // trasformo il reverseArray in un'unica stringa
     const joinReverseArray = reverseArray.join('');
 
-    console.log(word, joinReverseArray);
-
+    //con un if statement stabilisco se la funzione dà come output true o false 
     if (word === joinReverseArray) {
         return true;
     } else {
@@ -24,10 +23,10 @@ function isPalindrome(word) {
 
 //chiedo all'user una parola
 const chosenWord = prompt('choose a word');
-
+// assegno la funzione ad una variabile l'output della funzione ad una variabile
 const result = isPalindrome(chosenWord);
 
-
+// con un if statement stampo il messaggio appropriato in base all'output
 if (result) {
     console.log('palindromo');
 } else {
@@ -35,10 +34,7 @@ if (result) {
 }
 
 
-
-
-
-/* 
+/*  try to do a while loop
 function palindrome(word) {
     //con un ciclo while passo l'array
     let i = 0;
@@ -61,9 +57,7 @@ function palindrome(word) {
         }
     }
 
-}
-
-palindrome(word); */
+}*/
 
 
 
@@ -76,7 +70,7 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) 
 Dichiariamo chi ha vinto */
 
-/* 
+
 //con un prompt chiedo all'utente se vuole pari o dispari e inserisco la scelta in una variabile
 const evenOdd = prompt('Even or odd?');
 console.log(evenOdd);
@@ -113,4 +107,4 @@ if (totalNumber === evenOdd) {
     console.log('user wins');
 } else {
     console.log('computer wins');
-} */
+}
