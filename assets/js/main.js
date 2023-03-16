@@ -17,18 +17,20 @@ function isPalindrome(word) {
 
     if (word === joinReverseArray) {
         return true;
-    } 
+    } else {
+        return false;
+    }
 }
 
 //chiedo all'user una parola
 const chosenWord = prompt('choose a word');
 
-isPalindrome(chosenWord);
+const result = isPalindrome(chosenWord);
 
 
-if (isPalindrome) {
+if (result) {
     console.log('palindromo');
-} else if (!isPalindrome){
+} else {
     console.log('non palindromo');
 }
 
