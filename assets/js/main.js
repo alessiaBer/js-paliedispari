@@ -16,10 +16,8 @@ function isPalindrome(word) {
     console.log(word, joinReverseArray);
 
     if (word === joinReverseArray) {
-        console.log('palindromo')
-    } else {
-        console.log('non palindromo')
-    }
+        return true;
+    } 
 }
 
 //chiedo all'user una parola
@@ -27,13 +25,16 @@ const chosenWord = prompt('choose a word');
 
 isPalindrome(chosenWord);
 
-/*
-if (!isPalindrome) {
+
+if (isPalindrome) {
     console.log('palindromo');
-} else {
+} else if (!isPalindrome){
     console.log('non palindromo');
 }
- */
+
+
+
+
 
 /* 
 function palindrome(word) {
